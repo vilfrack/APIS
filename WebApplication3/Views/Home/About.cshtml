@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+@using (Html.BeginForm("About", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>TypeReport</label>
+        <input type="number" class="form-control" id="TypeReport" name="TypeReport">
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input type="number" name="Status" class="form-control" id="Status" placeholder="Status">
+    </div>
+    <div class="form-group">
+        <label>Detail</label>
+        <input type="text" id="Detail" name="Detail" class="form-control">
+
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+}
